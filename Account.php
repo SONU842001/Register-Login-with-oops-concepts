@@ -41,7 +41,7 @@ class Account {  //creation of class Account
     }
      
     //Database connection and value insertion to table 
-    private function insertUserDetails($fn, $ln, $un, $em, $pw)
+    private function insertUserDetails($fn, $ln, $un, $em, $pw){
         //$pw = hash("sha512", $pw);
 
        $query = $this->con->prepare("INSERT INTO users (firstName, lastName, userName, email, password)
